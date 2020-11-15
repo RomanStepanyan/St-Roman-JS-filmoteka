@@ -1,0 +1,75 @@
+.library-btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 3px #9895a2;
+    width: 100%;
+  }
+  
+  .library__btn {
+    width: 43.75%;
+    color: aqua;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #9895a2;
+    padding: 12px;
+    color: #101010;
+  
+    &--active {
+      background: #77c1bb;
+      color: #f3f6f6;
+      border-bottom: none;
+    }
+  }
+  
+  .library__vote {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  
+  .library__nameFilm {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    color: #f3f6f6;
+    font-size: 12px;
+    font-family: 'Roboto-medium', serif;
+  }
+  
+  .library__list {
+    list-style: none;
+    width: 93%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 28px;
+  }
+  
+  @media (min-width: 760px) {
+    .library__list {
+      width: 400px;
+      // margin: 0 0 2% 4%;
+    }
+  
+    
+  }
+  
+  @media (min-width: 1024px) {
+    .library__list{
+      width: 470px;
+      max-width: 964px;
+      margin: 30px 0;
+    }
+  
+    .library__btn {
+      width: 300px;
+    }
+  }

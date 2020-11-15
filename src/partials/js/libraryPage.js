@@ -1,6 +1,8 @@
+import activeDetailsPage from './navigation'
+
 const cardLibrary = document.querySelector('.library-list');
 
-function drawWatchedFilmList() {
+export function drawWatchedFilmList() {
     buttonWatch.classList.add('library__btn--active');
     buttonQueue.classList.remove('library__btn--active');
     cardLibrary.innerHTML = "";
@@ -12,7 +14,7 @@ function drawWatchedFilmList() {
     cardLibrary.append(fragment);
 }
 
-function drawQueueFilmList() {
+export function drawQueueFilmList() {
     buttonWatch.classList.remove('library__btn--active');
     buttonQueue.classList.add('library__btn--active');
     cardLibrary.innerHTML = "";
@@ -29,6 +31,7 @@ function createLibraryCardFunc(name, imgPath, movieId, voteAverage) {
     const img = document.createElement('img');
     img.classList.add('homePage__img');
     img.setAttribute('src', `https://image.tmdb.org/t/p/w500${imgPath}`);
+    img.setAttribute('id', movieId);
   
     const movieName = document.createElement('p');
     movieName.classList.add('homePage__movieName');

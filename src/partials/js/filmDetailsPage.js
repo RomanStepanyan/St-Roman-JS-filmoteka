@@ -30,7 +30,7 @@ function monitorButtonStatusText() {
   }
 }
 
-function toggleToWatched() {
+export function toggleToWatched() {
   monitorButtonStatusText();
   let watchedList = [];
   let lsWatchedList = JSON.parse(localStorage.getItem('filmsWatched'));
@@ -46,7 +46,7 @@ function toggleToWatched() {
   monitorButtonStatusText();
 }
 
-function toggleToQueue() {
+export function toggleToQueue() {
   monitorButtonStatusText();
   let queueList = [];
   let lsQueueList = JSON.parse(localStorage.getItem('filmsQueue'));
@@ -62,7 +62,7 @@ function toggleToQueue() {
   monitorButtonStatusText();
 }
 
-function showDetails(selectFilm) {
+export function showDetails(selectFilm) {
   detalis.innerHTML = "";
   const imagePosterPath = `https://image.tmdb.org/t/p/w500/${selectFilm.poster_path}`;
   detalis.insertAdjacentHTML(

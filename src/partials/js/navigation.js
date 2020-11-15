@@ -1,3 +1,10 @@
+import toggleToWatched from './filmDetailsPage'
+import toggleToQueue from './filmDetailsPage'
+import showDetails from './filmDetailsPage'
+import drawWatchedFilmList from './libraryPage'
+import drawQueueFilmList from './libraryPage'
+
+
 const homePageBtn = document.querySelector('#homePage-js');
 const myLibraryPageBtn = document.querySelector('#myLibraryPage-js');
 const detailsPage = document.querySelector('.detalisPage__block');
@@ -41,7 +48,7 @@ function showLibraryPage() {
   drawQueueFilmList();
 }
 
-function activeDetailsPage(movieId, itsLibraryFilm) {
+export function activeDetailsPage(movieId, itsLibraryFilm) {
   homePage.classList.add('main__hidden');
   detailsPage.classList.remove('main__hidden');
   myLibraryPage.classList.add('main__hidden');

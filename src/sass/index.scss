@@ -1,0 +1,10 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    user-select: none;
+}
+.main__hidden {
+    display: none;
+  }

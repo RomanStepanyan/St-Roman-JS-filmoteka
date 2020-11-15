@@ -1,4 +1,5 @@
 'use strict';
+import activeDetailsPage from './navigation'
 
 let renderFilms;
 let genres;
@@ -32,6 +33,7 @@ function createCards(name, imgPath, year, movieId) {
   const img = document.createElement('img');
   img.classList.add('homePage__img');
   img.setAttribute('src', `https://image.tmdb.org/t/p/w500${imgPath}`);
+  img.setAttribute('id', movieId);
 
   const movieName = document.createElement('p');
   movieName.classList.add('homePage__movieName');
