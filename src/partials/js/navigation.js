@@ -14,8 +14,8 @@ const formSearch = document.querySelector('.homePage__form');
 const homePageBtnLogo = document.querySelector('.header-logo');
 let selectFilm = {};
 
-const buttonWatch = document.querySelector('#js-buttonWatchedFilms');
-const buttonQueue = document.querySelector('#js-buttonQueueFilms');
+const buttonWatch = document.querySelector('.js-buttonWatchedFilms');
+const buttonQueue = document.querySelector('.js-buttonQueueFilms');
 
 window.onload = showHomePage();
 

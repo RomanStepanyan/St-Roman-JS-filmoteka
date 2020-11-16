@@ -1,4 +1,6 @@
 import activeDetailsPage from './navigation'
+const buttonWatch = document.querySelector('.js-buttonWatchedFilms');
+const buttonQueue = document.querySelector('.js-buttonQueueFilms');
 
 const cardLibrary = document.querySelector('.library-list');
 
