@@ -3,6 +3,7 @@ import toggleToQueue from './filmDetailsPage'
 import showDetails from './filmDetailsPage'
 import drawWatchedFilmList from './libraryPage'
 import drawQueueFilmList from './libraryPage'
+import renderFilms from './initialHomePage'
 
 
 const homePageBtn = document.querySelector('#homePage-js');
@@ -75,3 +76,4 @@ export function activeDetailsPage(movieId, itsLibraryFilm) {
   buttonWatch.removeEventListener('click', drawWatchedFilmList);
   buttonQueue.removeEventListener('click', drawQueueFilmList);
 }
+export {selectFilm}

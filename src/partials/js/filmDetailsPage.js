@@ -1,3 +1,5 @@
+import selectFilm from './navigation'
+
 const detalis = document.querySelector('.detalisPage__block');
 
 function monitorButtonStatusText() {

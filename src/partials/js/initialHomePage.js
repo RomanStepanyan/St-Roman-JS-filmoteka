@@ -42,8 +42,12 @@ function createCards(name, imgPath, year, movieId) {
 
   item.append(img, movieName);
 
-  item.addEventListener('click', () => activeDetailsPage(movieId, false));
+  // item.addEventListener('click', () => activeDetailsPage(movieId, false));
+  item.addEventListener('click', (event) => {
+    console.log(event.target);
+    activeDetailsPage(movieId, false);
 
+  })
   return item;
 }
 
@@ -140,3 +144,6 @@ prevBtn.addEventListener('click', getPopularMovies);
 nextBtn.addEventListener('click', plaginationNavigation);
 nextBtn.addEventListener('click', getPopularMovies);
 form.addEventListener('submit', searchFilms);
+
+
+export {renderFilms}
