@@ -15,7 +15,7 @@ const popWhenError = document.querySelector('.homePage__error');
 
 function fetchGenres() {
   fetch(
-    'https://api.themoviedb.org/3/genre/movie/list?api_key=f1943ebda4bde31f3353b960641d381f&language=en-US',
+    'https://api.themoviedb.org/3/genre/movie/list?api_key=f2c0383f553427336b1984c7194d50ac&language=en-US',
   )
     .then(res => res.json())
     .then(data => {
@@ -60,7 +60,7 @@ function getPopularMovies() {
   let fragment = document.createDocumentFragment();
   list.innerHTML = '';
   fetch(
-    `https://api.themoviedb.org/3/movie/popular?api_key=f1943ebda4bde31f3353b960641d381f&language=en-US&page=${pageNumber}`,
+    `https://api.themoviedb.org/3/movie/popular?api_key=f2c0383f553427336b1984c7194d50ac&language=en-US&page=${pageNumber}`,
   )
     .then(res => res.json())
     .then(data => {
@@ -86,7 +86,7 @@ function fetchMovies() {
   let fragment = document.createDocumentFragment();
   list.innerHTML = '';
   fetch(
-    `https://api.themoviedb.org/3/search/movie?api_key=f1943ebda4bde31f3353b960641d381f&language=en-US&page=${pageNumber}&include_adult=false&query=${inputValue}`,
+    `https://api.themoviedb.org/3/search/movie?api_key=f2c0383f553427336b1984c7194d50ac&language=en-US&page=${pageNumber}&include_adult=false&query=${inputValue}`,
   )
     .then(res => res.json())
     .then(data => {
@@ -97,7 +97,6 @@ function fetchMovies() {
         popWhenError.classList.add('main__hidden');
       }
       data.results.forEach(el => {
-        // console.log(createCards(el.title, el.backdrop_path, el.id));
         fragment.append(createCards(el.title, el.backdrop_path, el.release_date, el.id))
       },
       );

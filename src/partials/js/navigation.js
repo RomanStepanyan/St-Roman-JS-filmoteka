@@ -8,7 +8,7 @@ import renderFilms from './initialHomePage'
 
 const homePageBtn = document.querySelector('#homePage-js');
 const myLibraryPageBtn = document.querySelector('#myLibraryPage-js');
-const detailsPage = document.querySelector('.detalisPage__block');
+const detailsPage = document.querySelector('.detailsPage__block');
 const myLibraryPage = document.querySelector('.myFilmLibraryPage__block');
 const homePage = document.querySelector('.homePage__block');
 const formSearch = document.querySelector('.homePage__form');
