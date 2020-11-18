@@ -1,6 +1,6 @@
 import "./sass/main.scss";
 
-import "./partials/js/initialHomePage.js"
-import "./partials/js/navigation.js"
-import "./partials/js/filmDetailsPage.js"
-import "./partials/js/libraryPage.js"
+import "./parts/js/initialHomePage.js"
+import "./parts/js/navigation.js"
+import "./parts/js/filmDetailsPage.js"
+import "./parts/js/libraryPage.js"
